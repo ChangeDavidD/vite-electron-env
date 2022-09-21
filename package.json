@@ -10,13 +10,15 @@
     "dev": "vite --mode development",
     "beta": "vite --mode beta",
     "prod": "vite --mode production",
-    "build_dev": "NODE_ENV=development vue-tsc --noEmit && vite build --mode development && electron-builder",
-    "build_prod": "set NODE_ENV=dev vue-tsc --noEmit && vite build && electron-builder"
+    "build_dev": "vue-tsc --noEmit && vite build --mode development && electron-builder",
+    "build_beta": " vue-tsc --noEmit && vite build --mode beta && electron-builder",
+    "build_prod": "set NODE_ENV=dev vue-tsc --noEmit && vite build --mode production && electron-builder"
   },
   "engines": {
     "node": "^14.18.0 || >=16.0.0"
   },
   "devDependencies": {
+    "@rollup/plugin-replace": "^4.0.0",
     "@vitejs/plugin-vue": "^3.0.1",
     "electron": "^20.0.2",
     "electron-builder": "^23.3.3",
