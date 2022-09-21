@@ -7,9 +7,9 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "dev": "NODE_ENV=development vite --mode development",
-    "beta": "NODE_ENV=beta vite --mode beta",
-    "prod": "NODE_ENV=production vite --mode production",
+    "dev": "vite --mode development",
+    "beta": "vite --mode beta",
+    "prod": "vite --mode production",
     "build_dev": "NODE_ENV=development vue-tsc --noEmit && vite build --mode development && electron-builder",
     "build_prod": "set NODE_ENV=dev vue-tsc --noEmit && vite build && electron-builder"
   },

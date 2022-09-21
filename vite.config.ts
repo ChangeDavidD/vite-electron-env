@@ -15,6 +15,7 @@ export default defineConfig({
       main: {
         entry: 'electron/main/index.ts',
         vite: {
+          mode: 'beta',
           build: {
             // For Debug
             sourcemap: true,
@@ -30,6 +31,7 @@ export default defineConfig({
           index: path.join(__dirname, 'electron/preload/index.ts'),
         },
         vite: {
+          mode: 'beta',
           build: {
             // For Debug
             sourcemap: 'inline',
